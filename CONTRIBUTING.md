@@ -102,6 +102,6 @@ and visit [http://localhost:8000/](http://localhost:8000/) to inspect the site.
 
 3. In the left sidebar, click Deploy Workshop.
 
-4. Above the list of workflow runs, select Run workflow dropdown and click Run workflow
+4. Above the list of workflow runs, select Run workflow dropdown and click Run workflow.
 
 Then the release will run through the CI/CD pipeline and be available shortly after.
