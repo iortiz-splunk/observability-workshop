@@ -20,9 +20,6 @@ In your local machine, open a terminal window and change into the directory wher
 Update the IP address or public DNS for your instance
 Update the filename to match your exact version
 
-``` bash
-scp -P 2222 AppServerAgent-22.4.0.33722.zip splunk@i-0b6e3c9790292be66.splunk.show:/home/splunk
-```
 {{< tabs >}}
 {{% tab title="Command" %}}
 ``` bash
@@ -42,7 +39,6 @@ AppServerAgent-22.4.0.33722.zip                                                 
 SSH into your EC2 instance using the instance and password assigned to you by the instructor.
 
 ``` bash
-cd Downloads
 ssh -P 2222 splunk@i-0b6e3c9790292be66.splunk.show
 ```
 
@@ -59,7 +55,7 @@ unzip AppServerAgent-*.zip
 {{% notice title="Tip" style="primary"  icon="lightbulb" %}}
 We already configured the required configuration fields required by AppDynamics within the Controller (Application Name, Tier, Node..). If you need to modify any of these configuration, you can do this by modifying the controller-info.mxl file located at /opt/appdynamics/javaagent/conf directory
 
-There are various ways to configure this parameters, below is the order precendence:
+There are various ways to configure these parameters, below is the order precendence:
 1. System environment variables.
 2. JVM properties passed on the command line.
 3. Properties within the controller-info.xml file.

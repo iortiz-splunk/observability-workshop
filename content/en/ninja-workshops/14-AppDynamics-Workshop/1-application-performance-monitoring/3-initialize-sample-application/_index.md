@@ -16,20 +16,20 @@ http://[ec-ip-address]:8088
 
 
 1. Click Manager App.
-2. You will be prompted to enter a username and password. Use following the case sensitive credentials to login to the Tomcat Manager App.
+2. You will be prompted to enter a username and password. Use following credentials to login to the Tomcat Manager App.
 
-Username: admin
-Password: welcome1
+Username: admin  
+Password: welcome1  
 
 ![Manager App](images/managerApp.png)
 
 {{% notice title="Tip" style="primary"  icon="lightbulb" %}}
-If you are having "401 Unauthorized" issues when clicking on "Manager App", try to use an incognito window or a different browser. If the issues persist even with a different web browser, let your instructor know, it may be a misconfiguration problem.
+If you are having "401 Unauthorized" issues when clicking on "Manager App", try to use an incognito window or a different browser. If the issues persist even with a different web browser, let your instructor know, it may be a configuration problem.
 {{% /notice %}}
 
 You should now see the Tomcat Manager App page. Under the **Deploy** section enter the following values:
 
-3. Enter /Supercar-Trader in the **Context Path**: field.
+3. Enter **/Supercar-Trader** in the **Context Path**: field.
 4. Enter the following path in the **WAR or Directory path:** field.
 
 ```bash
@@ -38,8 +38,8 @@ file://opt/appdynamics/lab-artifacts/app-war-file/Supercar-Trader.war
 
 5. Click the **Deploy** button.
 
-![App Config](images/managerApp.png)
-
+![App Config](images/deploy_config.png)  
+  
 Once the deployment is completed, you should see the application running as shown in the following image.
 
 ![App deployment](images/appDeployed.png)
@@ -50,8 +50,8 @@ The sample application home page is accessible through your web browser with a U
 http://[ec2-ip-address]:8080/Supercar-Trader/home.do
 ``` 
 
-You should be able to see the home page of the Supercar Trader application 
-![Supercar Trade Home Page](images/SuperCarHomePage.png)
+You should be able to see the home page of the Supercar Trader application  
+![Supercar Trade Home Page](images/SuperCarHomePage.png)  
 
 
 ## Start the Load Generation
