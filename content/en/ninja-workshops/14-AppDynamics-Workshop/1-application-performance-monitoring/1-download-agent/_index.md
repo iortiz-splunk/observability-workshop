@@ -6,18 +6,19 @@ description: In this exercise you will access your AppDynamics Controller from y
 ---
 
 ## Login to your controller
-Use the URL provided in the workshop environment section and proceed to login. 
+Use the URL provided in the APM Overview section and proceed to login. 
 
-## Navigate to the Getting Started Wizard
+## Configure your Application
 
 1. Select **Overview** on the left navigation panel
 2. Click on **Getting Started** tab
 3. Click on **Getting Started Wizard** button 
 
-![Getting Started Wizard](images/agent-wizard.png)
+![Getting Started Wizard](images/agent-wizard.png)  
+  
 
-## Select the Java Application Type 
-
+Select the Java Application Type 
+  
 ![Java Application](images/select-java.png)
 
 

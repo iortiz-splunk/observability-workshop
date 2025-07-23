@@ -1,5 +1,5 @@
 ---
-title: AppDynamics Workshop
+title: Splunk4Ninjas AppDynamics
 weight: 14
 time: 2 minutes
 description: In this Lab you learn how to use AppDynamics to monitor the health of your application services.
