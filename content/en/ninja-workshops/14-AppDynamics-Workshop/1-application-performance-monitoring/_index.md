@@ -6,7 +6,7 @@ description: In this Lab you learn how to use Splunk AppDynamics to monitor the 
 ---
 
 ## Objectives 
-In this Lab you learn how to use AppDynamics to monitor the health of your application services. You will need to complete this lab first before you start the other labs in this PoV Playbook.
+In this Lab you learn how to use AppDynamics to monitor the health of your application services. You will need to complete this lab first before you start the other labs in this Workshop.
 
 When you have completed this lab, you will be able to:
 
@@ -38,3 +38,4 @@ Supercar Trader is a Java-based Web Application
 The purpose of Supercar-Trader collection is to generate dynamic traffic (business transactions) for AppDynamics Controller.
 
 ![Application VM](images/application-vm.png)
+
