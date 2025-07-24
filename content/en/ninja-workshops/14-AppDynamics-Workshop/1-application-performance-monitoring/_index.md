@@ -13,6 +13,7 @@ When you have completed this lab, you will be able to:
 - Download the AppDynamics Java APM Agent.
 - Install the AppDynamics Java APM Agent.
 - Initialize the sample application with load.
+- Understand the core concepts of AppDynamics APM
 - Configure collection settings in the Controller.
 - Monitor your application’s health.
 - Troubleshoot application performance issues to find root cause.

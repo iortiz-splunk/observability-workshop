@@ -1,6 +1,5 @@
 ---
 title: Install the Java Agent
-time: 2 minutes
 weight: 2
 description: In this exercise you will SSH into your server and proceed to install the Java agent.
 ---
@@ -13,7 +12,7 @@ In this exercise you will perform the following actions:
 - Modify the Apache Tomcat startup script to add the Java agent
 
 ## Upload Java Agent to Application VM
-By this point you should have received the information regarding the EC2 instance that you will be using for this workshop. Ensure you have the IP address of your EC2 instance, username and password required to log into the instance 
+By this point you should have received the information regarding the EC2 instance that you will be using for this workshop. Ensure you have the IP address of your EC2 instance, username and password required to ssh into the instance 
 
 In your local machine, open a terminal window and change into the directory where the java agent file was downloaded to. SCP the file into the EC2 instance using the following command. This may take some time to complete
 

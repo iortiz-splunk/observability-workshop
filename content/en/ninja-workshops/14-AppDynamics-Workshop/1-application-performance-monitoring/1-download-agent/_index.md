@@ -1,6 +1,5 @@
 ---
 title: Download Java Agent
-time: 2 minutes
 weight: 1
 description: In this exercise you will access your AppDynamics Controller from your web browser and download the Java APM agent from there.
 ---
@@ -14,13 +13,11 @@ Use the URL provided in the APM Overview section and proceed to login.
 2. Click on **Getting Started** tab
 3. Click on **Getting Started Wizard** button 
 
-![Getting Started Wizard](images/agent-wizard.png)  
-  
+![Getting Started Wizard](images/agent-wizard-rz.png)  
 
 Select the Java Application Type 
   
-![Java Application](images/select-java.png)
-
+![Java Application](images/select-java-rz.png)
 
 ## Download the Java Agent
 
@@ -37,12 +34,12 @@ Select the Java Application Type
 The application name must be unique, make sure to append your initials or add a unique identifier to the application name
 {{% /notice %}}
 
-![Agent Configuration1](images/java-agent-config1.png)
+![Agent Configuration1](images/java-agent-config1-rz.png)
 
-![Agent Configuration2](images/java-agent-config2.png)
+![Agent Configuration2](images/java-agent-config2-rz.png)
 
 
 Your browser should prompt you that the agent is being downloaded to your local file system. Make sure to take note of where the file was downloaded to and the full name of it. 
 
-![Agent Bundle](images/agent-bundle.png)
+![Agent Bundle](images/agent-bundle-rz.png)
 
