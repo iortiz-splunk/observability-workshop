@@ -1,7 +1,7 @@
 ---
 title: Monitor Server Health
 time: 2 minutes
-weight: 1
+weight: 4
 description: In this exercise you will review several dashboards to monitor server health and navigate between server and application contexts.
 ---
 

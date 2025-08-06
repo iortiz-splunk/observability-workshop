@@ -1,7 +1,7 @@
 ---
 title: Deploy Server Agent - Option 1
 time: 2 minutes
-weight: 1
+weight: 2
 description: Depending on the version of the AppDynamics Controller you are using, you may or may not be able download the Server Visibility agent from the Controller as shown here for Option 1.
 ---
 

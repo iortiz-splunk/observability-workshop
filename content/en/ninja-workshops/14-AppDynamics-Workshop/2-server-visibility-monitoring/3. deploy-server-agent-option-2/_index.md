@@ -1,7 +1,7 @@
 ---
 title: Deploy Server Agent - Option 2
 time: 2 minutes
-weight: 1
+weight: 3
 description: Manually install server agent.
 ---
 
