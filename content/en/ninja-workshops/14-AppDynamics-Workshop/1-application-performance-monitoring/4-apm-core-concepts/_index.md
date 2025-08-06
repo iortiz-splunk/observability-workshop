@@ -87,3 +87,11 @@ You can read more about Transaction Snapshots [here](https://docs.appdynamics.co
 You can read more about Call Graphs [here](https://docs.appdynamics.com/appd/23.x/latest/en/application-monitoring/business-transactions/troubleshoot-business-transaction-performance-with-transaction-snapshots/call-graphs)  
   
 ![Call Graph](images/call-graph.png)  
+
+## Health Rules  
+
+** Need to add a section explaning the basics of health rules ** 
+
+## Security Health  
+
+## Baselines 
