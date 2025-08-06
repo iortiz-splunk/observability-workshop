@@ -1,7 +1,7 @@
 ---
 title: Server Visibility Monitoring
 time: 2 minutes
-weight: 1
+weight: 2   
 description: In this Lab you learn about AppDynamics Server Visibility Monitoring and Service Availability Monitoring.
 ---
 
