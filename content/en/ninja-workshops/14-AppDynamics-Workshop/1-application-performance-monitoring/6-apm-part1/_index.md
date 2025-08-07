@@ -110,3 +110,4 @@ The detail panel for the JDBC exit calls shows the specific query that took most
 ## Summary 
 
 In this lab, we first used Business Transactions to identify a very slow transaction that required troubleshooting. We then examined the call graph to pinpoint the specific part of the code causing delays. Following that, we drilled down into downstream services and the database to further analyze the root cause of the slowness. Finally, we successfully identified the exact inefficient SQL query responsible for the performance issue. This comprehensive approach demonstrates how AppDynamics helps in isolating and resolving transaction bottlenecks effectively. 
+
