@@ -1,7 +1,7 @@
 ---
 title: Database Monitoring
 time: 2 minutes
-weight: 1
+weight: 4
 description: In this Lab you learn about AppDynamics Database Visibility Monitoring.
 ---
 

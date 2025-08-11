@@ -15,15 +15,9 @@ In this exercise you will complete the following tasks:
 
 Use the URL below to login to your controller from your web browser.
 
-{{< tabs >}}
-{{% tab title="Command" %}}
-
 ``` bash
 http://[controller-vm-ip-address]:8090
 ```
-
-{{% /tab %}}
-{{< /tabs >}}
 
 ![Controller Login Screen](images/controller-login.png)
 
@@ -84,10 +78,3 @@ Change the default configuration to have the IP Address stored along with the da
 You can read more about configuring the Controller UI for Browser RUM [**here**](https://help.splunk.com/en/appdynamics-saas/end-user-monitoring/25.7.0/end-user-monitoring/browser-monitoring/browser-real-user-monitoring/overview-of-the-controller-ui-for-browser-rum/configure-the-controller-ui-for-browser-rum).
 
 ![BRUM Dash 5](images/03-brum-dashboard-05.png)
-
-  
-
-Next
-----
-
-We’ll configure the browser agent injection settings.

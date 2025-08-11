@@ -131,15 +131,9 @@ Now that you have the Browser Real User Monitoring agent configured and explored
 
 Open the main page of the app with your web browser. In the example URL below, substitute the IP Address or fully qualified domain name of your Application VM.
 
-{{< tabs >}}
-{{% tab title="Command" %}}
-
 ``` bash
 http://[application-vm-ip-address]:8090/Supercar-Trader/home.do
 ```
-
-{{% /tab %}}
-{{< /tabs >}}
 
 You should see the home page of the application.
 
@@ -182,10 +176,3 @@ Search for cars and continue browsing the site.
 **3.** Click on the remaining tabs to explore the web site.
 
 ![App Page 6](images/05-app-page-06.png)
-
-  
-
-Next
-----
-
-We’ll continue to monitor and troubleshoot Browser App issues.
