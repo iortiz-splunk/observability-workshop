@@ -1,10 +1,9 @@
 ---
-title: BRUM Lab Prerequisits
+title: Business iQ Lab Prerequisits
 time: 2 minutes
 weight: 1
 description: In this exercise you will access your Controller and verify application load.
 ---
-
 In this exercise you will complete the following tasks:
 
 *   Access your AppDynamics Controller from your web browser.
@@ -62,53 +61,30 @@ Check the agent status for the Nodes:
 If any of the checks you performed in the previous steps could not be verified, SSH into your **Application VM** and follow these steps to restart the application and transaction load.
 
 Use the following commands to stop the running instance of Apache Tomcat.
-{{< tabs >}}
-{{% tab title="Command" %}}
 
 ``` bash
 cd /usr/local/apache/apache-tomcat-9/bin
 ./shutdown.sh
 ```
 
-{{% /tab %}}
-{{< /tabs >}}
-
 Use the command below to check for remaining application JVMs still running.
-
-{{< tabs >}}
-{{% tab title="Command" %}}
 
 ``` bash
 ps -ef | grep Supercar-Trader
 ```
 
-{{% /tab %}}
-{{< /tabs >}}
-
 If you find any remaining application JVMs still running, kill the remaining JVMs using the command below.
-
-{{< tabs >}}
-{{% tab title="Command" %}}
 
 ``` bash
 sudo pkill -f Supercar-Trader
 ```
 
-{{% /tab %}}
-{{< /tabs >}}
-
 Use the following commands to stop the load generation for the application.
-
-{{< tabs >}}
-{{% tab title="Command" %}}
 
 ``` bash
 cd /opt/appdynamics/lab-artifacts/phantomjs
 ./stop_load.sh
 ```
-
-{{% /tab %}}
-{{< /tabs >}}
 
 You should see output similar to the following image.
 
@@ -116,16 +92,10 @@ You should see output similar to the following image.
 
 Now use the following commands to start Apache Tomcat.
 
-{{< tabs >}}
-{{% tab title="Command" %}}
-
 ``` bash
 cd /usr/local/apache/apache-tomcat-9/bin
 ./startup.sh
 ```
-
-{{% /tab %}}
-{{< /tabs >}}
 
 Wait for two minutes and use the following command to ensure Apache Tomcat is running on port 8080.
 
@@ -139,16 +109,10 @@ You should see output similar to the following image showing that port 8080 is i
 
 Use the following commands to start the load generation for the application.
 
-{{< tabs >}}
-{{% tab title="Command" %}}
-
 ``` bash
 cd /opt/appdynamics/lab-artifacts/phantomjs
 ./start_load.sh
 ```
-
-{{% /tab %}}
-{{< /tabs >}}
 
 You should see output similar to the following image.
 

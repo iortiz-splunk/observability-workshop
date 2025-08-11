@@ -1,7 +1,7 @@
 ---
 title: Final Steps
 time: 2 minutes
-weight: 1
+weight: 6
 description: Final steps and clean up.
 ---
 

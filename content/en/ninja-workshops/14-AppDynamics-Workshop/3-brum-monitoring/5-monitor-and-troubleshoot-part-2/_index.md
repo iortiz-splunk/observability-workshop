@@ -141,10 +141,3 @@ You can read more about the Browser Snapshots [**here**](https://help.splunk.com
 ![BRUM Dash 9](images/06-brum-dashboard-09.png)
 
 **You have now completed this lab!**
-
-  
-
-Next
-----
-
-We’ll start the Database Monitoring lab.
