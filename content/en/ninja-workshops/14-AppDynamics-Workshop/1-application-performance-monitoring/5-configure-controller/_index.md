@@ -13,7 +13,7 @@ In this exercise you will complete the following tasks:
 
 ## Adjust Business Transaction Settings  
 
-In the last exercise, you validated that the Business Transactions were being auto-detected. There are times when you want to adjust the Business Transaction auto-detection rules to get them to an optimal state. This is the case with our sample application, which is built on an older Apache Struts framework.  
+In the last exercise, you validated that Business Transactions were being auto-detected. There are times when you want to adjust the Business Transaction auto-detection rules to get them to an optimal state. This is the case with our sample application, which is built on an older Apache Struts framework.  
 
 The business transactions highlighted in the following image show that each pair has a Struts Action (.execute) and a Servlet type (.jsp). You will be adjusting the settings of the transaction detection rules so that these two types of transactions will be combined into one.  
 
@@ -45,7 +45,7 @@ Optimize the transaction detection by following these steps:
 10. Check the box **Enable Servlet Filter Detection** (all three boxes should be checked on Servlet settings).
 11. Click **Save** to save your changes.
 
-You can read more about Transaction Detection Rules [here](https://docs.appdynamics.com/appd/23.x/latest/en/application-monitoring/configure-instrumentation/transaction-detection-rules). 
+You can read more about Transaction Detection Rules [here](https://help.splunk.com/en/appdynamics-saas/application-performance-monitoring/25.7.0/configure-instrumentation/transaction-detection-rules). 
 
 ![Rule Configuration](images/rule-configuration1.png)  
 ![Rule Configuration Cont](images/rule-configuration2.png)  
@@ -61,7 +61,7 @@ You can control the data captured in call graphs within transaction snapshots wi
 4. Click the **Capture Raw SQL** option.
 5. Click **Save**.
 
-You can read more about Call Graph settings [here](https://docs.appdynamics.com/appd/23.x/latest/en/application-monitoring/configure-instrumentation/call-graph-settings).  
+You can read more about Call Graph settings [here](https://help.splunk.com/en/appdynamics-saas/application-performance-monitoring/25.7.0/configure-instrumentation/call-graph-settings).  
 
 ![Call Graph Configuration](images/call-graph-config.png)  
   

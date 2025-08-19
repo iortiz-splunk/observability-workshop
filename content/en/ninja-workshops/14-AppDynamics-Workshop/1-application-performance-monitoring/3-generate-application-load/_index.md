@@ -1,73 +1,28 @@
 ---
-title: Initialize Sample Application
+title: Generate Application Load
 weight: 3
 description: In this section you will install the sample application and begin the load generation
 ---
+In this exercise you will perform the following actions:
 
-## Install the application on Apache Tomcat
+* Verify the sample app is running.
+* Start the load generation for the sample application.
+* Confirm the transaction load in the Controller.
 
-The Apache Tomcat landing page can be accessed through your web browser with a URL in the format like below. Make sure to use the IP address or public domain name of your ec2 instance
+## Verify that the Sample Application is Running
 
-```bash
-http://[ec-ip-address]:8088
-```
-
-![Tomcat Landing Page](images/Apache_Tomcat_landingpage-rz.png)
-
-
-1. Click Manager App.
-2. You will be prompted to enter a username and password. Use following credentials to login to the Tomcat Manager App.
-
-Username: admin  
-Password: welcome1  
-
-![Manager App](images/managerApp.png)  
-
-
-{{% notice title="Tip" style="primary"  icon="lightbulb" %}}
-If you are having "401 Unauthorized" issues when clicking on "Manager App", try to use an incognito window or a different browser. If the issues persist even with a different web browser, let your instructor know, it may be a configuration problem.
-{{% /notice %}}
-
-You should now see the Tomcat Manager App page. Under the **Deploy** section enter the following values:
-
-1. Enter **/Supercar-Trader** in the **Context Path**: field.
-2. Enter the following path in the **WAR or Directory path:** field.
-
-```bash
-file://opt/appdynamics/lab-artifacts/app-war-file/Supercar-Trader.war
-```
-
-5. Click the **Deploy** button.
-
-![App Config](images/deploy_config.png)  
-  
-Once the deployment is completed, you should see the application running as shown in the following image.
-
-![App deployment](images/appDeployed.png)         
-
-The sample application home page is accessible through your web browser with a URL in the format seen below. Enter that URL in your browser’s navigation bar, substituting the IP Address of your EC2 instance. Likewise, you can click on the application path **/Supercar-Trader** outlined in the previous image. 
+The sample application home page is accessible through your web browser with a URL in the format seen below. Enter that URL in your browser’s navigation bar, substituting the IP Address of your EC2 instance.
 
 ```bash
 http://[ec2-ip-address]:8080/Supercar-Trader/home.do
 ``` 
 
-You should be able to see the home page of the Supercar Trader application  
-![Supercar Trade Home Page](images/SuperCarHomePage-rz.png) 
-
+You should be able to see the home page of the Supercar Trader application.
+![Supercar Trade Home Page](images/SuperCarHomePage-rz.png)
 
 ## Start the Load Generation
 
-SSH into your ec2 instance and execute the following commands:
-
-```bash
-sudo chmod 754 /opt/appdynamics/lab-artifacts/phantomjs/*.sh
-sed -i -e 's/\r$//' /opt/appdynamics/lab-artifacts/phantomjs/*.sh
-
-# Change it to use port 8088
-sed -i -e 's/8080/8088/g' /opt/appdynamics/lab-artifacts/phantomjs/*.js
-```
-
-Start the loadgen, it may take a few minutes for all the scripts to run. 
+SSH into your ec2 instance and start the load generation. It may take a few minutes for all the scripts to run. 
 
 ``` bash
 cd /opt/appdynamics/lab-artifacts/phantomjs
@@ -76,12 +31,18 @@ cd /opt/appdynamics/lab-artifacts/phantomjs
 
 ## Confirm transaction load in the Controller
 
-Use your web browser to access the AppDynamics Controller. Login to the Controller and you should see the Supercar-Trader-YOURINITIALS application.
+If you still have the Getting Started Wizard open in your web browser, you should see that the agent is now connected and that the Controller is receiving data.
+![Agent Connected](images/agent_connected.png)
+Click **Continue** and you will be taken to the **Application Flow Map** (you can jump to the Flow Map image below).
 
-1. From the Overview page (Landing Page). Click on the **Applications** tab on the left navigation panel
-2. Within the **Applications** page you can manually search for your application or you can use the search bar in the top right corner to narrow down your search. 
+
+If you previously closed the Controller browser window, log back into the Controller.
+
+1. From the Overview page (Landing Page). Click on the **Applications** tab on the left navigation panel.
 
 ![Controller Overview Page](images/ControllerOverviewPage.png)  
+
+2. Within the **Applications** page you can manually search for your application or you can use the search bar in the top right corner to narrow down your search. 
 
 ![Applications Search](images/ApplicationsSearch.png)   
 
@@ -99,7 +60,7 @@ During the agent download step we assigned the Tier name and Node name for the T
 <node-name>Web-Portal_Node-01</node-name>
 ```
 
-You might be wondering how the other four services had their Tier and Node name assigned. The sample application dynamically creates four additional JVMs from the initial Tomcat JVM and assigns the Tier and Node names by passing those properties into the JVM startup command as -D properties for each of the four services. Any -D properties included on the JVM startup command line will supersede the properties defined in the Java agents controller-info.xml file.
+You might be wondering how the other four services had their Tier and Node name assigned. The sample application dynamically creates four additional JVMs from the initial Tomcat JVM and assigns the Tier and Node names by passing those properties into the JVM startup command as -D properties for each of the four services. Any -D properties included on the JVM startup command line will supersede the properties defined in the Java agents ```controller-info.xml``` file.
 
 To see the JVM startup parameters used for each of the four services that were dynamically started, issue the following command in your terminal window of your ec2 instance.  
   

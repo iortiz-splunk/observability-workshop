@@ -3,9 +3,10 @@ title: Download Java Agent
 weight: 1
 description: In this exercise you will access your AppDynamics Controller from your web browser and download the Java APM agent from there.
 ---
+In this exercise you will access the AppDynamics Controller from a web browser and download the Java APM agent from there.
 
-## Login to your controller
-Use the URL provided in the APM Overview section and proceed to login. 
+## Login to the Controller
+Log into the [AppDynamics SE Lab Controller](https://se-lab.saas.appdynamics.com/controller/) using your Cisco credentials. 
 
 ## Configure your Application
 
