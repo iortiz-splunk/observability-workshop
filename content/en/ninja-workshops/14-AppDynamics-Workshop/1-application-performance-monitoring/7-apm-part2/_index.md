@@ -39,7 +39,7 @@ When you open an error snapshot from the exceptions screen, the snapshot opens t
 14.  Click **Error Details** to see the full stack trace. Full stack traces are critical for developers to trace and fix bugs.
 
 {{% notice title="Tip" style="primary"  icon="lightbulb" %}}
-If you want to learn more about error handling and exceptions, refer to the official AppDynamics documentation in the following link: [here](https://docs.appdynamics.com/appd/23.x/latest/en/application-monitoring/troubleshooting-applications/errors-and-exceptions).
+If you want to learn more about error handling and exceptions, refer to the official AppDynamics documentation in the following link: [here](https://help.splunk.com/en/appdynamics-saas/application-performance-monitoring/25.7.0/troubleshooting-applications/errors-and-exceptions).
 {{% /notice %}}
 
 
@@ -95,7 +95,7 @@ Note: If you have an issue seeing the Memory screen, try using an alternate brow
 16. Use the outer scroll bar to scroll to the bottom of the screen.
 17. Note high **PS Old Gen** memory usage as a potential sign of memory leaks or inefficient garbage collection. Identifying memory pressure early can prevent outages.
 
-You can read more about Node and JVM monitoring [here](https://docs.appdynamics.com/appd/23.x/latest/en/application-monitoring/tiers-and-nodes/troubleshoot-node-problems) and [here](https://docs.appdynamics.com/appd/23.x/latest/en/application-monitoring/tiers-and-nodes/monitor-jvms).  
+You can read more about Node and JVM monitoring [here](https://help.splunk.com/en/appdynamics-saas/application-performance-monitoring/25.7.0/tiers-and-nodes/troubleshoot-node-problems) and [here](https://help.splunk.com/en/appdynamics-saas/application-performance-monitoring/25.7.0/tiers-and-nodes/monitor-jvms).  
 
 ![PS Old Gen](images/ps-old-gen.png)  
 
