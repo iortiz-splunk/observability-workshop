@@ -34,7 +34,7 @@ Now let’s take look at Dynamics Baselines and options for the charts at the bo
 
 The precision of AppDynamics unique Dynamic Baselining increases over time to provide you with an accurate picture of the state of your applications, their components, and their business transactions, so you can be proactively alerted before things get to a critical state and take action before your end users are impacted.
 
-You can read more about AppDynamics Dynamic Baselines [here](https://docs.appdynamics.com/appd/24.x/latest/en/application-monitoring/business-transactions/monitor-the-performance-of-business-transactions/dynamic-baselines).  
+You can read more about AppDynamics Dynamic Baselines [here](https://help.splunk.com/en/appdynamics-saas/application-performance-monitoring/25.7.0/business-transactions/monitor-the-business-transaction-performance/dynamic-baselines).  
 
 
 ## Troubleshoot a slow transaction snapshot
@@ -50,7 +50,7 @@ Let’s look at our business transactions and find the one that has the highest 
 4. Find the Business Transaction named /Supercar-Trader/car.do and drill into the very slow transaction snapshots by clicking on the number of Very Slow Transactions for the business transaction. 
 
 {{% notice title="Tip" style="primary"  icon="lightbulb" %}}
-If the /Supercar-Trader/car.do does not have any Very Slow Transactions, find a Business Transaction which has some and click in the number under that column. The screenshots may look slightly different moving forward for the concepts remain the same.
+If the /Supercar-Trader/car.do BT does not have any Very Slow Transactions, find a Business Transaction which has some and click in the number under that column. The screenshots may look slightly different moving forward but the concepts remain the same.
 {{% /notice %}}
   
 ![Very Slow Transaction](images/very-slow-transaction.png)   
@@ -59,23 +59,23 @@ If the /Supercar-Trader/car.do does not have any Very Slow Transactions, find a 
 
 ![snapshot list](images/snapshot.png)   
   
-When the transaction snapshot viewer opens, you will see the flow map view of all the components that were part of this specific transaction. This snapshot shows the transaction traversed through the components below in order.
+When the transaction snapshot viewer opens, we see the flow map view of all the components that were part of this specific transaction. This snapshot shows the transaction traversed through the components below in order.
 
 - The Web-Portal Tier.
 - The Api-Services Tier.
 - The Enquiry-Services Tier.
 - The MySQL Database.
 
-The Potential Issues panel on the left highlights slow methods and slow remote services. While you can use the Potential Issues panel to drill straight into the call graph, we will use the Flow Map within the snapshot to follow the complete transaction in this example.
+The Potential Issues panel on the left highlights slow methods and slow remote services. While we can use the Potential Issues panel to drill straight into the call graph, we will use the Flow Map within the snapshot to follow the complete transaction in this example.
 
-6. Click on Drill Down on the Web-Portal Tier shown on the Flow Map of the snapshot  
+6. Click on Drill Down on the Web-Portal Tier shown on the Flow Map of the snapshot.
 
 ![Web Portal Drilldown](images/webportal-drilldown.png)   
   
 
-The tab that opens shows the call graph of the Web-Portal Tier. You can see that most of the time was due to an outbound HTTP call.
+The tab that opens shows the call graph of the Web-Portal Tier. We can see that most of the time was from an outbound HTTP call.
 
-7. You can click on eah block to drill down to the segment where we can see the issue happening at. Click the HTTP link to open the detail panel for the downstream call.
+7. Click on the block to drill down to the segment where the issue happening. Click the HTTP link to the details of the downstream call.
 
 ![Call Graph](images/callgraph.png)   
 
@@ -85,7 +85,7 @@ The detail panel for the downstream call shows that the Web-Portal Tier made an 
 
 ![Call Graph Downstream](images/callgraph_downstream.png)   
 
-The next tab that opens shows the call graph of the Api-Services Tier. You can see that 100% of the time was due to an outbound HTTP call.
+The next tab that opens shows the call graph of the Api-Services Tier. We can see that 100% of the time was due to an outbound HTTP call.
 
 9. Click the HTTP link to open the detail panel for the downstream call.
     
@@ -97,17 +97,16 @@ The detail panel for the downstream call shows that the Api-Services Tier made a
 
 ![API service downstream](images/apiservices-downstream.png)  
 
-The next tab that opens shows the call graph of the Enquiry-Services Tier. You can see that there were JDBC calls to the database that caused issues with the transaction.
+The next tab that opens shows the call graph of the Enquiry-Services Tier. We can see that there were JDBC calls to the database that caused issues with the transaction.
 
 11. Click the JDBC link with the largest time to open the detail panel for the JDBC calls.
 
 ![JDBC Callgraph](images/jdbc-callgraph.png)  
 
-The detail panel for the JDBC exit calls shows the specific query that took most of the time. You can see the full SQL statement along with the SQL parameter values.
+The detail panel for the JDBC exit calls shows the specific query that took most of the time. We can see the full SQL statement along with the SQL parameter values.
 
 ![DB Call Details](images/db-query-details.png)  
 
 ## Summary 
 
 In this lab, we first used Business Transactions to identify a very slow transaction that required troubleshooting. We then examined the call graph to pinpoint the specific part of the code causing delays. Following that, we drilled down into downstream services and the database to further analyze the root cause of the slowness. Finally, we successfully identified the exact inefficient SQL query responsible for the performance issue. This comprehensive approach demonstrates how AppDynamics helps in isolating and resolving transaction bottlenecks effectively. 
-
